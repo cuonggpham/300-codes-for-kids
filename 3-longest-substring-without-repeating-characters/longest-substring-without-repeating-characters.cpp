@@ -4,7 +4,7 @@ public:
         int n = s.length();
         int l = 0;
         int maxx = 0;
-        set<char> se;
+        unordered_set<char> se;
         for(int r=0; r<n; r++){
             while(se.count(s[r]) != 0){
                 se.erase(s[l]);
